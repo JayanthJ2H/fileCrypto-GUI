@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FileCrypto</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="outer-container">
+        <div class="upload">
+            <div id="circle" class="file add">
+                <img id="uploadFile" src="./images/addFile.png" alt="Upload File" />
+            </div>
+            <label for="secretFile">Add File - [txt]</label>
+            <input id="secretFile" accept=".txt" type="file" style="display: none;" />
+            <p id="secretFileName"></p> 
+        </div>
+        <div class="upload">
+            <div id="circle" class="key add">
+                <img id="uploadKey" src="./images/addkey.png" alt="Upload Key" />
+            </div>
+            <label for="keyFile">Add Key - [img]</label>
+            <input id="keyFile" accept="image/*" type="file" style="display: none;" />
+            <p id="keyFileName"></p> 
+        </div>        
+    </div>
+    <div class="cryptobar">
+        <button id="encrypt" class="encrypt">Encrypt file</button>
+        <button id="decrypt" class="decrypt">Decrypt file</button>
+    </div>
+    <div id="log" class="log"></div>
+
+    <script src="renderer.js"></script>
+</body>
+</html>

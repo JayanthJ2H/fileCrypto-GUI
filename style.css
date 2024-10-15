@@ -1,0 +1,153 @@
+* {
+    user-select: none;
+    -webkit-user-drag: none;
+}
+
+body {
+    background-image: url('./images/blue1.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.outer-container {
+    display: flex;
+}
+
+.upload {
+    width: 50%;
+    height: 80vh;
+    border: 2px solid #e0e0e079;
+    background-color: rgba(43, 44, 45, 0.301); 
+    border-radius: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: relative;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1); 
+    transition: box-shadow 0.3s ease;
+}
+
+.upload:hover {
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
+}
+
+.add {
+    width: 180px;
+    height: 180px;
+    border: none;
+    border-radius: 50%; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(145deg, #3a3a3a, #6a6a6a); /* Gradient background */
+    box-shadow: 4px 4px 10px rgba(0, 0, 0, 0.2), -4px -4px 10px rgba(255, 255, 255, 0.1); /* 3D effect */
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.add:hover {
+    background: linear-gradient(145deg, #2e2e2e, #505050); /* Darker gradient on hover */
+    box-shadow: 6px 6px 15px rgba(0, 0, 0, 0.3), -6px -6px 15px rgba(255, 255, 255, 0.15); /* Enhanced shadow on hover */
+}
+
+img {
+    width: 100px;
+    height: 100px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+}
+
+img:hover {
+    transform: scale(1.1); 
+}
+
+label {
+    margin: 10px;
+    border-radius: 5px;
+    background-color: #02519b;
+    color: white;
+    padding: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+label:hover {
+    background-color: #55b8e0;
+    box-shadow: 0 0 10px rgb(154, 154, 154);
+}
+
+h4:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.7);
+}
+
+p {
+    position: absolute;
+    bottom: 10px;
+    border-radius: 8px;
+    color: #d1c979;
+    background-color: rgba(50, 50, 50, 0.85);
+    padding: 10px 15px;
+    font-size: 15px;
+    backdrop-filter: blur(5px);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.3);
+}
+
+
+.cryptobar {
+    border: 2px solid #333;
+    width: 100%;
+    height: 10vh;
+    border: 2px solid #e0e0e079;
+    margin-top: 10px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: rgba(43, 44, 45, 0.301); 
+}
+
+button {
+    width: 200px;
+    height: 40px;
+    border-radius: 5px;
+    cursor: pointer;
+    border: none;
+    color: white;
+    font-weight: bold;
+    transition: box-shadow 0.3s ease, background-color 0.3s ease;
+}
+
+button:hover {
+    box-shadow: 0 0 20px 2px rgba(0, 0, 0, 0.5);
+}
+
+.encrypt {
+    background-color: #e63946;
+}
+
+.encrypt:hover {
+    background-color: #d62828;
+}
+
+.decrypt {
+    background-color: #52b788;
+}
+
+.decrypt:hover {
+    background-color: #40916c;
+}
+
+.log {
+    width: 100%;
+    min-height: 5vh;
+    height: auto;
+    background-color: #000000;
+    border: 1px rgba(217, 217, 217, 0.162);
+    margin-top: 5px;
+    color: white;
+    text-align: center;
+    align-content: center;
+    border-radius: 5px;
+    font-size: 14px;
+}
